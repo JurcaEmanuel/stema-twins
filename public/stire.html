@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Stire noua</title>
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<meta content="Bootstrap News Template - Free HTML Templates" name="keywords">
+        <meta content="Bootstrap News Template - Free HTML Templates" name="description">
+        <link href="img/favicon.ico" rel="icon">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet"> 
+
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <link href="css/style.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="brand">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="b-logo">
+                            <a href="index.html">
+                                <img src="img/logo.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-4">
+                        <div class="b-ads">
+                            <a href="index.html">
+                                <img src="img/logo3.png"><img src="img/logo2.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="b-search">
+                            <input type="text" placeholder="Search">
+                            <button><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		 <div class="nav-bar">
+            <div class="container">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand"></a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                   <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="index.html" class="nav-item nav-link active">Acasa</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+		<div class="top-news">
+		<div class="container">
+			<div class="form-style-6">
+				<h1>Stirea ta</h1>
+				<form action="insert_stire.php" method="POST">
+					<input type="text" name="username" placeholder="Username" />
+					<input type="text" name="password" placeholder="Password" />
+					<input type="text" name="titlu" placeholder="Titlul stirii..." />
+					<textarea name="stire" placeholder="Scrie stirea..."></textarea>
+					<p>Adauga o imagine:</p>
+					<input type="file" id="myFile" name="filename"><br><br>
+					<input type="submit" value="Trimite" />
+				</form>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>
